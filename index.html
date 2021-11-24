@@ -7,7 +7,7 @@
 
 
 <div class="card bg-light">
-<article class="card-body mx-auto" style="max-width: 400px;">
+<article class="card-body mx-auto" style="max-width: 500px;">
 	<h4 class="card-title mt-3 text-center">Calculate your charging speed</h4><br>
 	<form>
         <div class="form-group input-group">
@@ -19,6 +19,10 @@
                 <option>12A</option>
                 <option>16A</option>
                 <option>20A</option>
+                <option>25A</option>
+                <option>30A</option>
+                <option>35A</option>
+                <option>40A</option>
             </select>
         </div> <!-- form-group end.// -->      
         <div class="form-group input-group">
@@ -31,6 +35,10 @@
                 <option>12A</option>
                 <option>16A</option>
                 <option>20A</option>
+                <option>25A</option>
+                <option>30A</option>
+                <option>35A</option>
+                <option>40A</option>
             </select>
         </div> <!-- form-group end.// --><br>
         <p>How many phases is your charger installed on:</p>
@@ -43,6 +51,23 @@
             <div class="col">
                 <input type="radio" id="1-phase" name="drone" value="1-phase">
                 <label for="1-phase">1 Phase</label>
+            </div>
+        </div>
+        <br>
+        <p>What charger cable do you use, see specs of cable:</p>
+        <div style="display: flex;">
+            <div class="col">
+                <input type="radio" id="1phase20A" name="drone" value="1 Phase, 20A"
+             checked>
+                <label for="3-phases">1 Phase, 20A</label>
+            </div>
+            <div class="col">
+                <input type="radio" id="3phase20A" name="drone" value="3 Phase, 20A">
+                <label for="1-phase">3 Phase, 20A</label>
+            </div>
+            <div class="col">
+                <input type="radio" id="3phase32A" name="drone" value="3 Phase, 32A">
+                <label for="1-phase">3 Phase, 32A</label>
             </div>
         </div>
         <br>
@@ -59,7 +84,7 @@
 	    </div> <!-- form-group end.// --><br>
         <p>How much strain is on your main fuses in avarage:</p>     
         <div class="slidecontainer">
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" style="width: 100%;">
           </div><br>                           
         <div class="form-group">
             <button type="submit" class="btn btn-primary btn-block"> Calculate  </button>
