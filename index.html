@@ -33,6 +33,16 @@
                 <option>20A</option>
             </select>
         </div> <!-- form-group end.// -->   
+        <p>How many phases is your charger installed on:</p>
+        <div>
+            <input type="radio" id="huey" name="drone" value="3-phases"
+         checked>
+            <label for="3-phases">3 Phases</label>
+        </div>
+        <div>
+            <input type="radio" id="dewey" name="drone" value="1-phase">
+            <label for="1-phase">1 Phase</label>
+        </div>
         <div class="form-group input-group">
         	<div class="input-group-prepend">
 	    	    <span class="input-group-text"></span>
@@ -43,7 +53,11 @@
 	    		<option>Kia E-niro</option>
 	    		<option>Volvo XC40</option>
 	    	</select>
-	    </div> <!-- form-group end.// -->                                   
+	    </div> <!-- form-group end.// -->   
+        <p>How much strain is on your main fuses in avarage:</p>     
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          </div><br>                           
         <div class="form-group">
             <button type="submit" class="btn btn-primary btn-block"> Calculate  </button>
         </div> <!-- form-group// -->                                                             
