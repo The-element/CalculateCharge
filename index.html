@@ -24,7 +24,8 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-	                <h1 class="text-center header">Calculate your charging speed</h1><br>
+	                <h1 class="text-center header">Calculate your charging speed</h1>
+	                <h4 class="text-center">Calculate your charging speed</h4><br>
                 </div>
             </row>
             <div class="row">
@@ -74,23 +75,17 @@
                             </div>
                         </div>
                         <br><br>
-                        <p>What charger cable do you use, see specs of cable:</p>
-                        <div class="radio2" style="display: flex;">
-                            <div class="col">
-                                <input type="radio" id="1phase20A" name="cable" value="1 Phase, 20A"
-                                    checked>
-                                <label for="3-phases">1 Phase, 20A</label>
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"></span>
                             </div>
-                            <div class="col">
-                                <input type="radio" id="3phase20A" name="cable" value="3 Phase, 20A">
-                                <label for="1-phase">3 Phase, 20A</label>
-                            </div>
-                            <div class="col">
-                                <input type="radio" id="3phase32A" name="cable" value="3 Phase, 32A">
-                                <label for="1-phase">3 Phase, 32A</label>
-                            </div>
-                        </div>
-                        <br><br>
+                            <select class="form-control">
+                                <option selected=""> Choose the charger cable you use</option>
+                                <option>1 Phase, 20A</option>
+                                <option>3 Phase, 20A</option>
+                                <option>3 Phase, 32A</option>
+                            </select>
+                        </div> <!-- form-group end.// --><br>
                         <div class="form-group input-group">
                 	        <div class="input-group-prepend">
         	    	            <span class="input-group-text"></span>
@@ -109,7 +104,7 @@
                 </div>
                 <div class="col">
                     <div class="row d-flex justify-content-center">
-                        <p>How much strain is on your main fuses in avarage:</p> 
+                        <p>How much strain is there on your main fuses in average when charging:</p> 
                     </div>
                     <div class="row slidecontainer d-flex justify-content-center">
                         <input type="range" orient="vertical" min="1" max="100" value="50">
