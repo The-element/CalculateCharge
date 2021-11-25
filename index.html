@@ -33,10 +33,12 @@
                     <div class="form-group input-group">
                         <div class="row" style="width: 100%;">
                             <p>Ange din huvudsäkringsstorlek:</p><br>
-                            <div class="round round-sm blue">
-                                <i class="icon-looks fa fa-info" aria-hidden="true"></i>
-                                <span class="sr-only">info</span>
-                            </div>
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#mainFuse">
+                                <div class="round round-sm blue">
+                                    <i class="icon-looks fa fa-info" aria-hidden="true"></i>
+                                    <span class="sr-only">info</span>
+                                </div>
+                            </button>
                             <select class="form-control">
                                 <option selected="">12A</option>
                                 <option>16A</option>
@@ -51,10 +53,12 @@
                     <div class="form-group input-group">
                         <div class="row" style="width: 100%;">
                             <p>Ange storleken på säkringarna till laddboxen:</p><br>
-                            <div class="round round-sm blue">
-                                <i class="icon-looks fa fa-info" aria-hidden="true"></i>
-                                <span class="sr-only">info</span>
-                            </div>
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#siteFuse">
+                                <div class="round round-sm blue">
+                                    <i class="icon-looks fa fa-info" aria-hidden="true"></i>
+                                    <span class="sr-only">info</span>
+                                </div>
+                            </button>
                             <select class="form-control">
                                 <option selected="">10A</option>
                                 <option>12A</option>
@@ -145,6 +149,45 @@
         <div class="container">
         </div>
         <br><br>
+
+
+        <!--MODAL-->
+        <div class="modal fade" id="mainFuse" tabindex="-1" role="dialog" aria-labelledby="mainFuseLabel" aria-hidden="true">
+		    <div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+				    <div class="modal-header">
+						<h5 class="modal-title" id="mainFuseLabel">Vad är en huvudsäkring och var finns den?</h5>
+		    			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>	
+        			</div>
+					<div class="modal-body">
+						<p>Elen som kommer in i din bostad går via en elmätare, i anslutning till din elmätare sitter förmodligen 3 säkringar. Dessa säkringar övervakar belastningen på ditt hela hushåll och kallas för huvudsäkringar.<br>
+                            Du kan se på säkringen vilken storlek dessa är på. Detta är angivet med en siffra och ett C eller ett A ihop med siffran, det är alltså denna siffra du ska använda här.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        
+        <div class="modal fade" id="siteFuse" tabindex="-1" role="dialog" aria-labelledby="siteFuseLabel" aria-hidden="true">
+		    <div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+				    <div class="modal-header">
+						<h5 class="modal-title" id="siteFuseLabel">Vad är detta för säkringar?</h5>
+		    			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>	
+        			</div>
+					<div class="modal-body">
+						<p>Efter huvudsäkringarna och elmätaren går strömmen vidare till ett säkringsskåp, ofta beläget i huset.<br>
+                            Här borde du finna en eller tre säkringar som laddboxen är kopplad via.<br>
+                            Du kan se på en av dessa vilken storlek som dessa är på. Detta är angivet med en siffra och ett C eller ett A ihop med siffran, det är alltså denna siffra som du ska använda här.
+                        </p>
+					</div>
+				</div>
+			</div>
+		</div>
 
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
