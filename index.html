@@ -31,85 +31,90 @@
             <div class="row">
 	            <div class="col">
                     <div class="form-group input-group">
-                        <select class="form-control">
-    	                    <option selected=""> Choose your Main fuze size</option>
-                            <option>12A</option>
-                            <option>16A</option>
-                            <option>20A</option>
-                            <option>25A</option>
-                            <option>30A</option>
-                            <option>35A</option>
-                            <option>40A</option>
-                        </select>
-                        <div class="round round-sm blue">
-                            <i class="icon-looks fa fa-info" aria-hidden="true"></i>
-                            <span class="sr-only">info</span>
-                        </div>
-                    </div> <!-- form-group end.// -->      
-                    <div class="form-group input-group">
-                        <select class="form-control">
-                            <option selected=""> Choose your Site fuse size</option>
-                            <option>10A</option>
-                            <option>12A</option>
-                            <option>16A</option>
-                            <option>20A</option>
-                            <option>25A</option>
-                            <option>30A</option>
-                            <option>35A</option>
-                            <option>40A</option>
-                        </select>
-                        <div class="round round-sm blue">
-                            <i class="icon-looks fa fa-info" aria-hidden="true"></i>
-                            <span class="sr-only">info</span>
-                        </div>
-                    </div> <!-- form-group end.// --><br>
-                    <div style="display: flex;">
-                        <div class="row d-flex justify-content-center">
-                            <p>How many phases is your charger installed on:</p> 
+                        <div class="row" style="width: 100%;">
+                            <p>Ange din huvudsäkringsstorlek:</p><br>
                             <div class="round round-sm blue">
                                 <i class="icon-looks fa fa-info" aria-hidden="true"></i>
                                 <span class="sr-only">info</span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="form-group input-group">
-                        <div class="radio1" style="display: flex; width: 100%;">
-                            <div class="col">
-                                <input type="radio" id="3-phases" name="chargerphase" value="3-phases"
-                                    checked>
-                                <label for="3-phases">3 Phases</label>
-                            </div>
-                            <div class="col">
-                                <input type="radio" id="1-phase" name="chargerphase" value="1-phase">
-                                <label for="1-phase">1 Phase</label>
-                            </div>
-                        </div>
-                        <br><br>
-                        <div class="form-group input-group">
                             <select class="form-control">
-                                <option selected=""> Choose the charger cable you use</option>
-                                <option>1 Phase, 20A</option>
+                                <option selected="">12A</option>
+                                <option>16A</option>
+                                <option>20A</option>
+                                <option>25A</option>
+                                <option>30A</option>
+                                <option>35A</option>
+                                <option>40A</option>
+                            </select>
+                        </div>
+                    </div> <!-- form-group end.// -->    
+                    <div class="form-group input-group">
+                        <div class="row" style="width: 100%;">
+                            <p>Ange storleken på säkringarna till laddboxen:</p><br>
+                            <div class="round round-sm blue">
+                                <i class="icon-looks fa fa-info" aria-hidden="true"></i>
+                                <span class="sr-only">info</span>
+                            </div>
+                            <select class="form-control">
+                                <option selected="">10A</option>
+                                <option>12A</option>
+                                <option>16A</option>
+                                <option>20A</option>
+                                <option>25A</option>
+                                <option>30A</option>
+                                <option>35A</option>
+                                <option>40A</option>
+                            </select>
+                        </div>
+                    </div> <!-- form-group end.// --><br>    
+                    <div class="form-group input-group">
+                        <div class="row" style="width: 100%;">
+                            <p>How many phases is your charger installed on:</p>
+                            <div class="round round-sm blue">
+                                <i class="icon-looks fa fa-info" aria-hidden="true"></i>
+                                <span class="sr-only">info</span>
+                            </div>
+                            <div class="radio1" style="display: flex; width: 100%;">
+                                <div class="col">
+                                    <input type="radio" id="3-phases" name="chargerphase" value="3-phases"
+                                        checked>
+                                    <label for="3-phases">3 Phases</label>
+                                </div>
+                                <div class="col">
+                                    <input type="radio" id="1-phase" name="chargerphase" value="1-phase">
+                                    <label for="1-phase">1 Phase</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- form-group end.// --><br>
+                    <div class="form-group input-group">
+                        <div class="row" style="width: 100%;">
+                            <p>Ange vilken laddkabel du använder:</p><br>
+                            <div class="round round-sm blue">
+                                <i class="icon-looks fa fa-info" aria-hidden="true"></i>
+                                <span class="sr-only">info</span>
+                            </div>
+                            <select class="form-control">
+                                <option selected="">1 Phase, 20A</option>
                                 <option>3 Phase, 20A</option>
                                 <option>3 Phase, 32A</option>
                             </select>
+                        </div>
+                    </div> <!-- form-group end.// --><br>
+                    <div class="form-group input-group">
+                        <div class="row" style="width: 100%;">
+                            <p>Ange vilken bil du har:</p><br>
                             <div class="round round-sm blue">
                                 <i class="icon-looks fa fa-info" aria-hidden="true"></i>
                                 <span class="sr-only">info</span>
                             </div>
-                        </div> <!-- form-group end.// --><br>
-                        <div class="form-group input-group">
         	    	        <select class="form-control">
-        	    	        	<option selected=""> Choose your car</option>
-        	    	        	<option>Hyundai Ioniq 5</option>
+        	    	        	<option selected="">Hyundai Ioniq 5</option>
         	    	        	<option>Kia E-niro</option>
         	    	        	<option>Volvo XC40</option>
         	    	        </select>
-        	                    <div class="round round-sm blue">
-                                    <i class="icon-looks fa fa-info" aria-hidden="true"></i>
-                                    <span class="sr-only">info</span>
-                                </div>
-        	            </div> <!-- form-group end.// --><br>
-                    </div>
+                        </div>
+        	        </div> <!-- form-group end.// --><br>
                 </div>
                 <div class="col">
                     <div class="row d-flex justify-content-center">
