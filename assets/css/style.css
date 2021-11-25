@@ -1,4 +1,6 @@
 input[type="range"] {
+    position: relative;
+    top: 5em;
     transform: rotateZ(270deg);
     -webkit-appearance: none;
     width: 175px;
@@ -21,4 +23,9 @@ input[type=range]::-webkit-slider-thumb {
     background: #FFFFFF;
     cursor: pointer;
     -webkit-appearance: none;
+}
+
+.header{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }

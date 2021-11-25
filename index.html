@@ -15,7 +15,7 @@
     	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     	</script>
-
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
         <script type="text/javascript" src="assets/js/scripts.js"></script>
         <title>Calculator</title>
     </head>
@@ -23,93 +23,96 @@
     <body>
         <div class="container">
             <div class="row">
-	            <h1 class="text-center">Calculate your charging speed</h1><br>
+                <div class="col">
+	                <h1 class="text-center header">Calculate your charging speed</h1><br>
+                </div>
             </row>
             <div class="row">
 	            <div class="col">
-                    <form>
-                        <div class="form-group input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"></span>
-                            </div>
-                            <select class="form-control">
-    	                        <option selected=""> Choose your Main fuze size</option>
-                                <option>12A</option>
-                                <option>16A</option>
-                                <option>20A</option>
-                                <option>25A</option>
-                                <option>30A</option>
-                                <option>35A</option>
-                                <option>40A</option>
-                            </select>
-                        </div> <!-- form-group end.// -->      
-                        <div class="form-group input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"></span>
-                            </div>
-                            <select class="form-control">
-                                <option selected=""> Choose your Site fuse size</option>
-                                <option>10A</option>
-                                <option>12A</option>
-                                <option>16A</option>
-                                <option>20A</option>
-                                <option>25A</option>
-                                <option>30A</option>
-                                <option>35A</option>
-                                <option>40A</option>
-                            </select>
-                        </div> <!-- form-group end.// --><br>
-                        <div class="form-group input-group">
-                            <p>How many phases is your charger installed on:</p>
-                            <div class="radio1" style="display: flex;">
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"></span>
+                        </div>
+                        <select class="form-control">
+    	                    <option selected=""> Choose your Main fuze size</option>
+                            <option>12A</option>
+                            <option>16A</option>
+                            <option>20A</option>
+                            <option>25A</option>
+                            <option>30A</option>
+                            <option>35A</option>
+                            <option>40A</option>
+                        </select>
+                    </div> <!-- form-group end.// -->      
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"></span>
+                        </div>
+                        <select class="form-control">
+                            <option selected=""> Choose your Site fuse size</option>
+                            <option>10A</option>
+                            <option>12A</option>
+                            <option>16A</option>
+                            <option>20A</option>
+                            <option>25A</option>
+                            <option>30A</option>
+                            <option>35A</option>
+                            <option>40A</option>
+                        </select>
+                    </div> <!-- form-group end.// --><br>
+                    <p>How many phases is your charger installed on:</p>
+                    <div class="form-group input-group">
+                        <div class="radio1" style="display: flex; width: 100%;">
+                            <div class="col">
                                 <input type="radio" id="3-phases" name="chargerphase" value="3-phases"
                                     checked>
                                 <label for="3-phases">3 Phases</label>
-                                <div class="col">
-                                    <input type="radio" id="1-phase" name="chargerphase" value="1-phase">
-                                    <label for="1-phase">1 Phase</label>
-                                </div>
                             </div>
-                            <br>
-                            <p>What charger cable do you use, see specs of cable:</p>
-                            <div class="radio2" style="display: flex;">
-                                <div class="col">
-                                    <input type="radio" id="1phase20A" name="cable" value="1 Phase, 20A"
-                                    checked>
-                                    <label for="3-phases">1 Phase, 20A</label>
-                                </div>
-                                <div class="col">
-                                    <input type="radio" id="3phase20A" name="cable" value="3 Phase, 20A">
-                                    <label for="1-phase">3 Phase, 20A</label>
-                                </div>
-                                <div class="col">
-                                    <input type="radio" id="3phase32A" name="cable" value="3 Phase, 32A">
-                                    <label for="1-phase">3 Phase, 32A</label>
-                                </div>
+                            <div class="col">
+                                <input type="radio" id="1-phase" name="chargerphase" value="1-phase">
+                                <label for="1-phase">1 Phase</label>
                             </div>
-                            <br>
-                            <div class="form-group input-group">
-                	            <div class="input-group-prepend">
-        	    	                <span class="input-group-text"></span>
-        	    	            </div>
-        	    	            <select class="form-control">
-        	    	            	<option selected=""> Choose your car</option>
-        	    	            	<option>Hyundai Ioniq 5</option>
-        	    	            	<option>Kia E-niro</option>
-        	    	            	<option>Volvo XC40</option>
-        	    	            </select>
-        	                </div> <!-- form-group end.// --><br>
                         </div>
-                        <div class="col">
-                            <p>How much strain is on your main fuses in avarage:</p>     
-                            <div class="slidecontainer">
-                                <input type="range" orient="vertical" min="1" max="100" value="50">
-                            </div><br>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary btn-block"> Calculate  </button>
-                            </div> <!-- form-group// -->  
-                        </div>                                                          
-                    </form>
+                        <br><br>
+                        <p>What charger cable do you use, see specs of cable:</p>
+                        <div class="radio2" style="display: flex;">
+                            <div class="col">
+                                <input type="radio" id="1phase20A" name="cable" value="1 Phase, 20A"
+                                    checked>
+                                <label for="3-phases">1 Phase, 20A</label>
+                            </div>
+                            <div class="col">
+                                <input type="radio" id="3phase20A" name="cable" value="3 Phase, 20A">
+                                <label for="1-phase">3 Phase, 20A</label>
+                            </div>
+                            <div class="col">
+                                <input type="radio" id="3phase32A" name="cable" value="3 Phase, 32A">
+                                <label for="1-phase">3 Phase, 32A</label>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="form-group input-group">
+                	        <div class="input-group-prepend">
+        	    	            <span class="input-group-text"></span>
+        	    	        </div>
+        	    	        <select class="form-control">
+        	    	        	<option selected=""> Choose your car</option>
+        	    	        	<option>Hyundai Ioniq 5</option>
+        	    	        	<option>Kia E-niro</option>
+        	    	        	<option>Volvo XC40</option>
+        	    	        </select>
+        	            </div> <!-- form-group end.// --><br>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block"> Calculate  </button>
+                    </div> <!-- form-group// -->  
+                </div>
+                <div class="col">
+                        <p>How much strain is on your main fuses in avarage:</p>     
+                        <div class="slidecontainer">
+                            <input type="range" orient="vertical" min="1" max="100" value="50">
+                        </div><br>
+                    </div>                                                          
                 </div>
             </div> <!-- card.// -->
         </div> 
