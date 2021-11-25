@@ -74,10 +74,12 @@
                     <div class="form-group input-group">
                         <div class="row" style="width: 100%;">
                             <p>Ange hur många faser är din laddbox installerad på:</p>
-                            <div class="round round-sm blue">
-                                <i class="icon-looks fa fa-info" aria-hidden="true"></i>
-                                <span class="sr-only">info</span>
-                            </div>
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#faser">
+                                <div class="round round-sm blue">
+                                    <i class="icon-looks fa fa-info" aria-hidden="true"></i>
+                                    <span class="sr-only">info</span>
+                                </div>
+                            </button>
                             <div class="radio1" style="display: flex; width: 100%;">
                                 <div class="col">
                                     <input type="radio" id="3-phases" name="chargerphase" value="3-phases"
@@ -94,28 +96,39 @@
                     <div class="form-group input-group">
                         <div class="row" style="width: 100%;">
                             <p>Ange vilken laddkabel du använder:</p><br>
-                            <div class="round round-sm blue">
-                                <i class="icon-looks fa fa-info" aria-hidden="true"></i>
-                                <span class="sr-only">info</span>
-                            </div>
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#laddKabel">
+                                <div class="round round-sm blue">
+                                    <i class="icon-looks fa fa-info" aria-hidden="true"></i>
+                                    <span class="sr-only">info</span>
+                                </div>
+                            </button>
                             <select class="form-control">
-                                <option selected="">1 Phase, 20A</option>
-                                <option>3 Phase, 20A</option>
-                                <option>3 Phase, 32A</option>
+                                <option selected="">1-fas, 20A</option>
+                                <option>3-fas, 20A</option>
+                                <option>3-fas, 32A</option>
                             </select>
                         </div>
                     </div> <!-- form-group end.// --><br>
                     <div class="form-group input-group">
                         <div class="row" style="width: 100%;">
                             <p>Ange vilken bil du har:</p><br>
-                            <div class="round round-sm blue">
-                                <i class="icon-looks fa fa-info" aria-hidden="true"></i>
-                                <span class="sr-only">info</span>
-                            </div>
         	    	        <select class="form-control">
-        	    	        	<option selected="">Hyundai Ioniq 5</option>
-        	    	        	<option>Kia E-niro</option>
-        	    	        	<option>Volvo XC40</option>
+        	    	        	<option selected=""> Märke</option>
+                                <option>Hyundai</option>
+        	    	        	<option>Kia</option>
+        	    	        	<option>Volvo</option>
+        	    	        </select>
+                            <select class="form-control">
+        	    	        	<option selected=""> Modell</option>
+                                <option>Ioniq 5</option>
+        	    	        	<option>E-Niro</option>
+        	    	        	<option>XC40</option>
+        	    	        </select>
+                            <select class="form-control">
+        	    	        	<option selected=""> Årsmodell</option>
+                                <option>05-14</option>
+        	    	        	<option>15-20</option>
+        	    	        	<option>20-22</option>
         	    	        </select>
                         </div>
         	        </div> <!-- form-group end.// --><br>
@@ -126,10 +139,12 @@
                             <p>Här anger du hur mycket belastning du i genomsnitt har på dina huvudsäkringar, när du inte laddar bilen:</p> 
                         </div>
                         <div class="col-xs justify-content-start">
-                            <div class="round round-sm blue">
-                                <i class="icon-looks fa fa-info" aria-hidden="true"></i>
-                                <span class="sr-only">info</span>
-                            </div>
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#belastning">
+                                <div class="round round-sm blue">
+                                    <i class="icon-looks fa fa-info" aria-hidden="true"></i>
+                                    <span class="sr-only">info</span>
+                                </div>
+                            </button>
                         </div>
                     </div>
                     <div class="row slidecontainer d-flex justify-content-center">
@@ -146,9 +161,6 @@
             </div>   
         </div> 
         <!--container end.//-->
-        <div class="container">
-        </div>
-        <br><br>
 
 
         <!--MODAL-->
@@ -188,6 +200,67 @@
 				</div>
 			</div>
 		</div>
+
+        <div class="modal fade" id="faser" tabindex="-1" role="dialog" aria-labelledby="faserLabel" aria-hidden="true">
+		    <div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+				    <div class="modal-header">
+						<h5 class="modal-title" id="faserLabel">Vad är fas?</h5>
+		    			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>	
+        			</div>
+					<div class="modal-body">
+						<p>En 'fas' är en förkortning för fasledare, vilket egentligen bara ett annat ord för en 'strömledande kabel'<br>
+                            Hur många kablar är din laddbox inkopplad på?<br>
+                            Det vanligaste är att den är inkopplad på 3 faser (3 kablar), men det händer att de installeras på endast 1 fas (1 kabel) också.<br>
+                            Om du är osäker bör du fråga din installtör. Tänk på att det kan gå flera fasledare i en "kabel" så det är inte säkert du kan se hur många faser laddboxen är inkopplad på.
+                        </p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <div class="modal fade" id="laddKabel" tabindex="-1" role="dialog" aria-labelledby="laddKabelLabel" aria-hidden="true">
+		    <div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+				    <div class="modal-header">
+						<h5 class="modal-title" id="laddKabelLabel">Vad är det egentligen ni vill att jag anger?</h5>
+		    			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>	
+        			</div>
+					<div class="modal-body">
+						<p>Även kabeln som kopplar bilen till laddboxen har sina begränsningar.<br>
+                           Hur många fasledare går igenom kabeln?<br>
+                           Hur många ampere är den dimensionerad för?<br><br>
+                           Du behöver inte veta eller förstå detta själv. Det viktiga är att du väljer rätt specifikation i rullgardinslistan. För att veta vad du ska välja kan du läsa på etiketten, på laddkabeln/dess kontakt. Där står det ofta något i stil med 3x32A. Det betyder att den är på 3 faser och klarar en effekt på 32A.
+                        </p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+        <div class="modal fade" id="belastning" tabindex="-1" role="dialog" aria-labelledby="belastningLabel" aria-hidden="true">
+		    <div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+				    <div class="modal-header">
+						<h5 class="modal-title" id="belastningLabel">Vad är det för belastning ni frågar om?</h5>
+		    			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>	
+        			</div>
+					<div class="modal-body">
+						<p>Dina säkringar är där för att skydda din anläggning från överbelastning eftersom överbelastning över tid kan leda till brand.<br>
+                           En säkring har en kapacitetsbegränsning angivet i ampere. Om belastningen på säkringen överskrids med mer ampere än vad den har kapacitet för kommer säkringen att lösa ut så att strömmen inte längre leds vidare<br>
+                           För att veta vad din anläggning klarar måste vi veta hur mycket dina säkringar belastas. Ange det här genom att sätta belastningsnivån till lämplig nivå.
+                        </p>
+					</div>
+				</div>
+			</div>
+		</div>
+
 
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">

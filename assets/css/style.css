@@ -1,5 +1,4 @@
 .header{
-    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -15,7 +14,9 @@
     margin-top: 50px;
     margin-bottom: 50px;
     background: rgb(221, 221, 221);
-    padding: 20px 100px;
+    padding: 30px 100px;
+    padding-left: 100px;
+    border-radius: 10px;
 }
 .col{
     margin: 0px 5px;
