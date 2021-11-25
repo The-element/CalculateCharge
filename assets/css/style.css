@@ -12,13 +12,14 @@
 }
 
 .container{
-    margin: 50px 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     background: rgb(221, 221, 221);
     padding: 20px 100px;
 }
 .col{
     margin: 0px 5px;
-}
+} 
 
 /*Chrome slider*/
 @media screen and (-webkit-min-device-pixel-ratio:0) {
