@@ -1,4 +1,4 @@
-input[type="range"] {
+/*input[type="range"] {
     transform: rotateZ(270deg);
     -webkit-appearance: none;
     width: 175px;
