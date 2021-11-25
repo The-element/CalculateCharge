@@ -1,4 +1,4 @@
-input[type="range"] {
+/*input[type="range"] {
     position: relative;
     top: 5em;
     transform: rotateZ(270deg);
@@ -28,4 +28,4 @@ input[type=range]::-webkit-slider-thumb {
 .header{
     margin-top: 50px;
     margin-bottom: 50px;
-}
+}*/
